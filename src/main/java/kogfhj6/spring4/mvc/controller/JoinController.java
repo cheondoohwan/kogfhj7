@@ -3,15 +3,19 @@ package kogfhj6.spring4.mvc.controller;
 
 import kogfhj6.spring4.mvc.service.MemberService;
 import kogfhj6.spring4.mvc.utils.GoogleCaptchaUtil;
+import kogfhj6.spring4.mvc.vo.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 @Controller
 public class JoinController {
@@ -57,19 +61,31 @@ public class JoinController {
     // 단, 데이터는 session 객체에 1회성으로 저장됨
     //회원정보 입력처리
     @PostMapping("/join/joinme")
-    public String joinmeok(HttpServletRequest req) {
+    public String joinmeok(HttpServletRequest req, RedirectAttributes rds, MemberVO mvo) throws UnsupportedEncodingException {
 
-        String returnPage = "/join/joinme";
+        // 질의문자열에 한글을 포함시키려면
+        // 반드시 URLEncoder를 이용해서 한글에 대한 적절한 인코딩이 필요!
+        String params = "?nm=" + URLEncoder.encode(mvo.getName(), "UTF-8");
+        params += "&jm1=" + mvo.getJumin1();
+        params += "&jm2=" + mvo.getJumin2();
+
+        String returnPage = "redirect:/join/joinme" + params;
         String gCaptcha = req.getParameter("g-recaptcha");
 
         // captcha코드의 유효성을 확인함
         // 결과 : true  => 테이블에 회원정보 저장, /join/joinok 이동
         // 결과 : false => /join/joinme 이동
         if(gcutil.checkCaptcha(gCaptcha)){
-            returnPage = "/join/joinok";
+            if( msrv.newMember(mvo) )
+                returnPage = "redirect:/join/joinok";
+            else
+                rds.addFlashAttribute("mvo", mvo);
         } else {
-            System.out.println("cpatcha 확인 실패!!");
+            System.out.println("captcha 확인 실패!!");
+            rds.addFlashAttribute("checkCaptcha", "자동가입 방지가 실패했어요!!");
+            rds.addFlashAttribute("mvo", mvo);
         }
+
         return returnPage;
     }
 

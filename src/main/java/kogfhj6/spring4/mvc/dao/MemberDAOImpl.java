@@ -1,5 +1,6 @@
 package kogfhj6.spring4.mvc.dao;
 
+import kogfhj6.spring4.mvc.vo.MemberVO;
 import kogfhj6.spring4.mvc.vo.ZipcodeVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,5 +37,11 @@ public class MemberDAOImpl implements MemberDAO {
                         rs.getString("dong"),
                         rs.getString("ri") )
         );
+    }
+
+    //회원정보 저장
+    @Override
+    public int insertMember(MemberVO mvo) {
+        return 0;
     }
 }

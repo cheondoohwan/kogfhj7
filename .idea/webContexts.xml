@@ -6,6 +6,7 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/titles/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/titles" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/titles/template.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/titles" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/agree.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/joinme.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/joinscripts.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join" />
       </map>
     </option>

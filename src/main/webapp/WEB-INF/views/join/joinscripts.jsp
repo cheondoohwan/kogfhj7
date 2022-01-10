@@ -28,9 +28,9 @@
         else if(!usejm.checked) alert('처리에 동의하세요');
         else{
             //질의문자열 생성
-            let params = '?name=' +name2.value
-            params += '&jumin1 =' +jumin1.value
-            params += '&jumin2 =' +jumin2.value
+            let params = '?nm=' + name2.value;
+            params += '&jm1=' + jumin1.value;
+            params += '&jm2=' + jumin2.value;
             location.href='/join/joinme' + params;
         }
     }
@@ -180,11 +180,30 @@
     $('#joinbtn').on('click',function () { processJoin(); } );
 
     function processJoin() {
-        if(grecaptcha.getResponse().length == 0) {
+        if($('#name').val()=='' || $('#jumin1').val()=='' || $('#jumin2').val()==''){
+            alert('정상적인 과정으로 회원가입을 진행하세요!')
+        } else if ($('#userid').val()=='') {
+            alert('아이디를 입력하세요');
+        } else if ($('#password').val()=='' || $('#repwd').val()==''){
+            alert('비밀번호를 입력하세요');
+        } else if ($('#zip1').val()=='' || $('#zip1').val()=='' || $('#addr1').val()=='' || $('#addr2').val()=='') {
+            alert('주소를 입력하세요');
+        } else if ($('#email1').val()=='' || $('#email2').val()=='') {
+            alert('이메일주소를 입력하세요');
+        } else if ($('#tel11').val()=='' || $('#tel2').val()=='' || $('#tel3').val()=='') {
+            alert('전화번호를 입력하세요');
+        } else if ($('#passwd').val()=='' != $('#repwd').val()=='') {
+            alert('비밀번호가 서로 일치하지 않습니다');
+        } else if(grecaptcha.getResponse().length == 0) {
             alert('자동가입방지 확인하세요!!');
         } else {
             $('#g-recaptcha').val( grecaptcha.getResponse() );
-            $('#joinfrm').method = 'post';
+
+            $('#zipcode').val( $('#zip1').val() + '-' + $('#zip2').val() );
+            $('#email').val( $('#email1').val() + '@' + $('#email2').val() );
+            $('#tel').val( $('#tel1').val() + '-' + $('#tel2').val()+ '-' + $('#tel3').val() );
+
+            $('#joinfrm').attr('method','post');
             $('#joinfrm').submit();
         }
     }

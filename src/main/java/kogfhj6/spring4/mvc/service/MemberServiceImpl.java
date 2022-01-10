@@ -3,6 +3,7 @@ package kogfhj6.spring4.mvc.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import kogfhj6.spring4.mvc.dao.MemberDAO;
+import kogfhj6.spring4.mvc.vo.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -52,5 +53,15 @@ public class MemberServiceImpl implements MemberService {
         }//검색한 주소데이터들을 json 형식으로 변환
 
         return json;
+    }
+
+    //회원정보 저장
+    @Override
+    public boolean newMember(MemberVO mvo) {
+        boolean isInserted = false;
+
+        if(mdao.insertMember(mvo) > 0 ) isInserted = true;
+
+        return isInserted;
     }
 }

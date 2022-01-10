@@ -1,4 +1,6 @@
 <%@page pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
      <div id="main">
@@ -41,19 +43,19 @@
                 <div class="col-11">
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="name">이름</label>
-                        <input type="text" class="form-control col-2 border-danger" name="name" id="name" value="${param.name}" readonly>
+                        <input type="text" class="form-control col-2 border-danger" name="name" id="name" value="${param.nm}" readonly>
                     </div> <!-- 이름-->
                     
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="jumin1">주민등록번호</label>
-                        <input type="text" class="form-control col-2 border-danger" name="jumin1" id="jumin1" value="${param.jumin1}" readonly>
+                        <input type="text" class="form-control col-2 border-danger" name="jumin1" id="jumin1" value="${param.jm1}" readonly>
                         <span class="col-form-label">&nbsp;&ndash;&nbsp;</span>
-                        <input type="text" class="form-control col-2 border-danger" name="jumin2" id="jumin2" value="${param.jumin2}" readonly>
+                        <input type="text" class="form-control col-2 border-danger" name="jumin2" id="jumin2" value="${param.jm2}" readonly>
                     </div> <!-- 주민번호-->
                     
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="userid">아이디</label>
-                        <input type="text" class="form-control col-3 border-danger" name="userid" id="userid">
+                        <input type="text" class="form-control col-3 border-danger" name="userid" id="userid" value="${mvo.userid}" >
                         <span id="uidmsg" class="col-form-label">&nbsp;8~18자의 영문, 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.</span>
                     </div> <!--아이디-->
                     
@@ -71,25 +73,29 @@
                     
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="zip1">우편번호</label>
-                        <input type="text" class="form-control col-1 border-danger" name="zip1" id="zip1" readonly>
+                        <input type="text" class="form-control col-1 border-danger" name="zip1" id="zip1"
+                               value="${fn:split(mvo.zipcode, '-')[0]}" readonly>
                         <span class="col-form-label">&nbsp;&ndash;&nbsp;</span> 
-                        <input type="text" class="form-control col-1 border-danger" name="zip2" id="zip2" readonly>&nbsp;&nbsp;
+                        <input type="text" class="form-control col-1 border-danger" name="zip2" id="zip2"
+                               value="${fn:split(mvo.zipcode, '-')[1]}"readonly>&nbsp;&nbsp;
                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#zipmodal"><i class="bi bi-question-circle"></i>&nbsp;우편번호 찾기</button>
                     </div><!--우편번호-->
                     
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="addr1">주소</label>
-                        <input type="text" class="form-control col-4 border-danger" name="addr1" id="addr1">&nbsp;
-                        <input type="text" class="form-control col-4 border-danger" name="addr2" id="addr2">
+                        <input type="text" class="form-control col-4 border-danger" name="addr" id="addr1" value="${mvo.addr}">&nbsp;
+                        <input type="text" class="form-control col-4 border-danger" name="etcaddr" id="addr2" value="${mvo.etcaddr}">
                     </div><!--주소-->
                     
                     <div class="form-group row">
                         <label class="col-form-label text-right text-danger col-2" for="email1">전자우편 주소</label>
-                        <input type="text" class="form-control col-3 border-danger" name="email1" id="email1">
+                        <input type="text" class="form-control col-3 border-danger" name="email1" id="email1"
+                               value="${fn:split(mvo.email, '@')[0]}" >
                         <div class="input-group-append">
                             <span class="input-group-text">@</span>
                         </div>
-                        <input type="text" class="form-control col-3 border-danger" name="email2" id="email2" readonly>&nbsp;&nbsp;
+                        <input type="text" class="form-control col-3 border-danger" name="email2" id="email2"
+                               value="${fn:split(mvo.email, '@')[1]}" readonly>&nbsp;&nbsp;
                         <select class="form-control col-2 border-danger" name="email3" id="email3">
                           <option>선택하세요</option>
                           <option>naver.com</option>
@@ -107,9 +113,11 @@
                             <option>012</option>
                         </select>
                         <span class="col-form-label">&nbsp;&ndash;&nbsp;</span> 
-                        <input type="text" class="form-control col-1 border-danger" name="tel2" id="tel2">
+                        <input type="text" class="form-control col-1 border-danger" name="tel2" id="tel2"
+                               value="${fn:split(mvo.tel, '-')[1]}">
                         <span class="col-form-label">&nbsp;&ndash;&nbsp;</span> 
-                        <input type="text" class="form-control col-1 border-danger" name="tel3" id="tel3">
+                        <input type="text" class="form-control col-1 border-danger" name="tel3" id="tel3"
+                               value="${fn:split(mvo.tel, '-')[2]}">
                     </div><!--전화번호-->
                     
                     <div class="form-group row">
@@ -131,6 +139,12 @@
                             <i class="bi bi-x"></i>취소하기
                         </button>
                     </div><!-- 버튼들 -->
+                         <input type="hidden" name="zipcode" id="zipcode" />
+                         <input type="hidden" name="email" id="email" />
+                         <input type="hidden" name="tel" id="tel" />
+
+
+
             </form>
         </div>
      </div> <!-- //main -->
