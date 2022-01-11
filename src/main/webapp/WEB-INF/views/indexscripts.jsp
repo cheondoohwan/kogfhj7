@@ -14,4 +14,9 @@
         }
     }
 
+    //로그아웃 처리
+    $('#logoutbtn').on('click', function () {
+       location.href ='/logout';
+    });
+
 </script>

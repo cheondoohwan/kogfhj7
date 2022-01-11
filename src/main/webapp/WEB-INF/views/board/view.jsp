@@ -1,7 +1,7 @@
 <%@page pageEncoding="utf-8" %>
      
      <div id="main">
-        <div style="mt25">
+        <div class="mt25">
             <h2><i class="bi bi-chat-text-fill"></i> 자유게시판</h2>
             <hr>
         </div>

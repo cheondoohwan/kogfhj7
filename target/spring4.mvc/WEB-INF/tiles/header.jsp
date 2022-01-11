@@ -13,7 +13,7 @@
             </c:if>
 
             <c:if test="${not empty sessionScope.uid}">
-            <button type="button" class="btn btn-dark" id="logout">로그아웃</button>
+            <button type="button" class="btn btn-dark" id="logoutbtn">로그아웃</button>
             </c:if>
         </h1>
     </div>

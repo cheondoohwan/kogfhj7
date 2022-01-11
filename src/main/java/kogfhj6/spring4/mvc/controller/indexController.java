@@ -51,14 +51,13 @@ public class indexController {
         return "loginfail.tiles";
     }
 
-    //로그아웃 성공
-    @PostMapping("/logout")
-    public String logOut(HttpSession sess){
-        String returnPage = "redirect:/";
-        return returnPage;
+    //로그아웃 처리
+    @GetMapping("/logout")
+    public String logout(HttpSession sess) {
+        sess.invalidate();
+
+        return "redirect:/";
     }
-
-
 
 }
 
