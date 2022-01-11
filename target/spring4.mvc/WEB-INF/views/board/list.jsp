@@ -1,10 +1,12 @@
 <%@page pageEncoding="utf-8" %>
      
      <div id="main">
-        <div style="mt25">
+        <div class="mt25">
             <h2><i class="bi-people-fill"></i>자유게시판</h2>
             <hr>
         </div>
+
+
         
         <div class="row">
             <div class="col"></div>

@@ -8,4 +8,6 @@ public interface MemberService {
     String findZipcode(String dong);
 
     boolean newMember(MemberVO mvo);
+
+    boolean loginMember(MemberVO mvo);
 }

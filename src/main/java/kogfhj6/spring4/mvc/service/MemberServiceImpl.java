@@ -64,4 +64,13 @@ public class MemberServiceImpl implements MemberService {
 
         return isInserted;
     }
+
+    @Override
+    public boolean loginMember(MemberVO mvo) {
+        boolean isLogined = false;
+
+        if(mdao.selectOneUserid(mvo) > 0 ) isLogined = true;
+
+        return isLogined;
+    }
 }

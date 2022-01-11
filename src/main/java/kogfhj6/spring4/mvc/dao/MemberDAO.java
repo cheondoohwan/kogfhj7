@@ -11,4 +11,6 @@ public interface MemberDAO {
     List<ZipcodeVO> selectZipcode(String dong);
 
     int insertMember(MemberVO mvo);
+
+    int selectOneUserid(MemberVO mvo);
 }

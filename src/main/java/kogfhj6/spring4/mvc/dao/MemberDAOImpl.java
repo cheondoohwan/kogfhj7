@@ -15,6 +15,7 @@ public class MemberDAOImpl implements MemberDAO {
     @Value("#{sql['selectOneUserid']}") private String selectOneUserid;
     @Value("#{sql['findZipcode']}") private String findZipcode;
     @Value("#{sql['insertMember']}") private String insertMember;
+    @Value("#{sql['selectUserid']}") private String selectUserid;
 
     @Autowired private JdbcTemplate jdbcTemplate;
 
@@ -47,5 +48,15 @@ public class MemberDAOImpl implements MemberDAO {
                 mvo.getZipcode(), mvo.getAddr(), mvo.getEtcaddr(), mvo.getEmail(), mvo.getTel()
         };
         return jdbcTemplate.update(insertMember, params);
+    }
+
+    //로그인처리
+    @Override
+    public int selectOneUserid(MemberVO mvo) {
+        Object[] params = new Object[] {
+                mvo.getUserid(), mvo.getPasswd() };
+
+        return jdbcTemplate.queryForObject(
+                selectUserid, params, Integer.class);
     }
 }
