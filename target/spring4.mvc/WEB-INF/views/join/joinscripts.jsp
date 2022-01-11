@@ -75,7 +75,7 @@
     $('#repwd').on('blur',function () {checkpwd(); })
 
     function checkpwd(){
-        let pwd = $('#password').val();
+        let pwd = $('#passwd').val();
         let repwd = $('#repwd').val();
 
         let msg = '비밀번호가 서로 일치하지 않습니다';
@@ -184,7 +184,7 @@
             alert('정상적인 과정으로 회원가입을 진행하세요!')
         } else if ($('#userid').val()=='') {
             alert('아이디를 입력하세요');
-        } else if ($('#password').val()=='' || $('#repwd').val()==''){
+        } else if ($('#passwd').val()=='' || $('#repwd').val()==''){
             alert('비밀번호를 입력하세요');
         } else if ($('#zip1').val()=='' || $('#zip1').val()=='' || $('#addr1').val()=='' || $('#addr2').val()=='') {
             alert('주소를 입력하세요');

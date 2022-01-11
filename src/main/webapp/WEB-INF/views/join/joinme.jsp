@@ -60,8 +60,8 @@
                     </div> <!--아이디-->
                     
                     <div class="form-group row">
-                        <label class="col-form-label text-right text-danger col-2" for="password">비밀번호</label>
-                        <input type="password" class="form-control col-3 border-danger" name="password" id="password">
+                        <label class="col-form-label text-right text-danger col-2" for="passwd">비밀번호</label>
+                        <input type="password" class="form-control col-3 border-danger" name="passwd" id="passwd">
                         <span class="col-form-label">&nbsp;8~18자의 영문, 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.</span>
                     </div> <!--비밀번호-->
                     
