@@ -22,13 +22,17 @@ public class BoardController {
 
     //목록보기
     @GetMapping("/board/list")
-        public ModelAndView list(ModelAndView mv){
+        public ModelAndView list(ModelAndView mv, String cpage, String ftype, String fkey){
+        if(cpage == null) cpage = "1";
 
         mv.setViewName("board/list.tiles");
-        mv.addObject("bd", bsrv.readBoard());
+        mv.addObject("bd", bsrv.readBoard(cpage, ftype, fkey));
+        mv.addObject("bdcnt", bsrv.countBoard(ftype, fkey)); //총 게시물수
 
         return mv;
     }
+
+
 
     //본문보기
     @GetMapping("/board/view")

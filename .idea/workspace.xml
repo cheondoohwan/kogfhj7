@@ -10,47 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa4eaf57-ae08-495b-8fd1-ad076d2e654c" name="변경" comment="Merge remote-tracking branch 'kogfhj6/master'">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/vo/BoardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/952bc928-5943-4dfd-9d13-61ae89efdbd2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/952bc928-5943-4dfd-9d13-61ae89efdbd2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kogfhj6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kogfhj6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semiprojectv2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/semiprojectv2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/controller/indexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/controller/indexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/dao/BoardDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kogfhj6/spring4/mvc/service/BoardServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardscripts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardscripts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/indexscripts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/indexscripts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/CaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/CaptchaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/JoinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/JoinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/indexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/controller/indexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/service/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/utils/GoogleCaptchaUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kogfhj6/spring4/mvc/utils/GoogleCaptchaUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/CaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/CaptchaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/JoinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/JoinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/indexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/controller/indexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/service/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/utils/GoogleCaptchaUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/classes/kogfhj6/spring4/mvc/utils/GoogleCaptchaUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/sql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/sql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/tiles/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/tiles/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/indexscripts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring4.mvc/WEB-INF/views/indexscripts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,11 +83,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="PLAIN_TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.31954023" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -133,9 +103,9 @@
       <recent name="F:\kogfhj6\semiprojectv2\src\main\webapp\WEB-INF\titles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\kogfhj6\semiprojectv2\src\main\webapp\WEB-INF\views" />
       <recent name="F:\kogfhj6\semiprojectv2\src\main\java\kogfhj6\spring4\mvc\utils" />
       <recent name="F:\kogfhj6\semiprojectv2\src\main\webapp\resources" />
-      <recent name="F:\kogfhj6\semiprojectv2\src\main\webapp\WEB-INF\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kogfhj6.spring4.mvc.vo" />
@@ -263,7 +233,9 @@
       <workItem from="1641865395354" duration="150000" />
       <workItem from="1641867802310" duration="579000" />
       <workItem from="1641868860723" duration="7946000" />
-      <workItem from="1641878299056" duration="11330000" />
+      <workItem from="1641878299056" duration="11714000" />
+      <workItem from="1641890464129" duration="1914000" />
+      <workItem from="1642033324474" duration="29620000" />
     </task>
     <task id="LOCAL-00001" summary="변경">
       <created>1641375840937</created>
@@ -328,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641878336979</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'kogfhj6/master'">
+      <created>1641890042017</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641890042017</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

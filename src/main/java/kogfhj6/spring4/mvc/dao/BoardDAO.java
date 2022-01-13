@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface BoardDAO {
 
-    List<BoardVO> selectBoard();
+    List<BoardVO> selectBoard(int startnum, String findtype, String findkey);
+
+    int countBoard(String findtype, String findkey);
 }
